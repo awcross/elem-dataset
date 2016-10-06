@@ -12,10 +12,10 @@ $ npm install --save elem-dataset
 ## Usage
 
 ```js
-import dataset from 'elem-dataset';
+import elemDataset from 'elem-dataset';
 
 const element = document.querySelector('.foo');
-const attributes = dataset(element);
+const attributes = elemDataset(element);
 ```
 
 ## License
