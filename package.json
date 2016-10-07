@@ -8,8 +8,7 @@
     "name": "Alex Cross",
     "url": "alexcross.io"
   },
-  "main": "index.js",
-  "jsnext:main": "index.js",
+  "main": "dist/index.js",
   "keywords": [
     "html",
     "htmlelement",
@@ -25,7 +24,7 @@
   ],
   "scripts": {
     "build": "npm test && npm run bundle && npm run minify",
-    "bundle": "node_modules/.bin/babel index.js > dist/index.js",
+    "bundle": "node_modules/.bin/babel src/index.js > dist/index.js",
     "minify": "node_modules/.bin/uglifyjs dist/index.js > dist/index.min.js -m",
     "test": "xo && ava"
   },

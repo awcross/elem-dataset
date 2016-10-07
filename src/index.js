@@ -13,7 +13,7 @@ function nativeDataset(element) {
 	return element.dataset;
 }
 
-module.exports = useNative() ? nativeDataset : function (element) {
+module.exports = useNative() ? nativeDataset : element => {
 	const map = {};
 	const attributes = element.attributes;
 

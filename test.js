@@ -6,7 +6,7 @@ const jsdom = require('jsdom');
 global.document = jsdom.jsdom();
 global.window = document.defaultView;
 
-const dataset = require('./index.js');
+const dataset = require('./src/index.js');
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
