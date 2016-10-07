@@ -1,6 +1,6 @@
 {
   "name": "elem-dataset",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple HTMLElement.dataset ponyfill",
   "license": "MIT",
   "repository": "awcross/elem-dataset",
