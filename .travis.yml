@@ -1,7 +1,5 @@
 language: node_js
 node_js:
   - 'node'
-install:
-  - npm install -g codecov
 after_success:
   - ./node_modules/.bin/nyc report --reporter=lcov | ./node_modules/.bin/codecov
