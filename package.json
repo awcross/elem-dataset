@@ -24,9 +24,8 @@
   ],
   "scripts": {
     "build": "npm test && npm run bundle && npm run minify",
-    "bundle": "node_modules/.bin/babel src/index.js > dist/index.js",
-    "minify": "node_modules/.bin/uglifyjs dist/index.js > dist/index.min.js -m",
-    "report": "nyc report --reporter=html",
+    "bundle": "babel src/index.js > dist/index.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "xo && ava"
   },
   "devDependencies": {
@@ -36,7 +35,6 @@
     "codecov": "^1.0.1",
     "jsdom": "^9.6.0",
     "nyc": "^8.3.1",
-    "uglify-js": "^2.7.3",
     "xo": "*"
   },
   "ava": {
