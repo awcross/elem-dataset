@@ -1,4 +1,4 @@
-# elem-dataset
+# elem-dataset [![Build Status](https://travis-ci.org/awcross/elem-dataset.svg?branch=master)](https://travis-ci.org/awcross/elem-dataset)
 
 > Simple [ponyfill](https://ponyfill.com) for [`HTMLElement.dataset`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
 
