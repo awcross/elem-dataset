@@ -26,7 +26,7 @@
     "build": "npm test && npm run bundle && npm run minify",
     "bundle": "babel src/index.js > dist/index.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "test": "xo && ava"
+    "test": "xo && nyc ava"
   },
   "devDependencies": {
     "ava": "*",
