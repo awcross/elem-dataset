@@ -2,6 +2,7 @@
 
 > Simple [ponyfill](https://ponyfill.com) for [`HTMLElement.dataset`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
 
+*Note that "true" and "false" values are [not allowed on boolean attributes](https://w3c.github.io/html/infrastructure.html#sec-boolean-attributes).*
 
 ## Install
 
