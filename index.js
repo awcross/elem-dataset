@@ -15,7 +15,7 @@ function nativeDataset(element) {
 
 module.exports = useNative() ? nativeDataset : element => {
 	const map = {};
-	const attributes = element.attributes;
+	const {attributes} = element;
 
 	function getter() {
 		return this.value;
@@ -34,14 +34,14 @@ module.exports = useNative() ? nativeDataset : element => {
 		const attribute = attributes[i];
 
 		if (attribute) {
-			const name = attribute.name;
+			const {name} = attribute;
 
 			if (name.indexOf('data-') === 0) {
 				const prop = name.slice(5).replace(/-./g, u => {
 					return u.charAt(1).toUpperCase();
 				});
 
-				const value = attribute.value;
+				const {value} = attribute;
 
 				Object.defineProperty(map, prop, {
 					enumerable: true,
