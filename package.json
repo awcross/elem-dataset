@@ -29,9 +29,11 @@
 		"property"
 	],
 	"scripts": {
+		"clean": "rm -rf dist",
 		"build": "npm test && npm run bundle",
-		"bundle": "babel index.js > dist/index.js",
+		"bundle": "mkdir dist && babel index.js > dist/index.js",
 		"coverage": "nyc report --reporter=text-lcov | coveralls",
+		"prepare": "npm run clean && npm run bundle",
 		"test": "xo && nyc ava"
 	},
 	"devDependencies": {
